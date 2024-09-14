@@ -1,0 +1,20 @@
+package com.hotel_review.user.entities;
+
+import com.hotel_review.user.dto.HotelDTO;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Rating {
+	
+	private String ratingId;
+	private String UserId;
+	private HotelDTO hotel;
+	private int rating;
+	private String feedback;
+
+}

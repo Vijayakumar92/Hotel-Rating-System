@@ -1,0 +1,5 @@
+package com.hotel_review.user.exceptions;
+
+public class UserNotFoundException {
+
+}

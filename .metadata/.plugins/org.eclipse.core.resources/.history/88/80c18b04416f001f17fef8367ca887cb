@@ -1,0 +1,5 @@
+package com.hotel_review.user.repository;
+
+public interface UserRepository {
+
+}

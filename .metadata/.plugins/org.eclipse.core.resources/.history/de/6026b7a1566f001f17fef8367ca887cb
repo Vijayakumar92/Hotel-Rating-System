@@ -1,0 +1,10 @@
+package com.hotel_review.user.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="HOTEL-SERVICE",url="http://localhost:8083/hotelcontroller/")
+public interface HotelService {
+	
+	Hotel getbyid(@)
+
+}

@@ -1,0 +1,5 @@
+package com.hotel_review.user.service.impl;
+
+public class UserServiceImp {
+
+}

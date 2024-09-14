@@ -1,0 +1,33 @@
+package com.hotel_review.user.service.impl;
+
+import java.util.UUID;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.hotel_review.user.entities.User;
+import com.hotel_review.user.repository.UserRepository;
+import com.hotel_review.user.service.UserService;
+
+@Service
+public class UserServiceImp implements UserService{
+
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	private Logger logger=LoggerFactory.getLogger(UserServiceImp.class);
+	
+	public User addUser(User user) {
+		String randomUserId=UUID.randomUUID().toString();
+		user.setUserId(randomUserId);
+		return userRepository.save(user);
+	}
+
+
+}

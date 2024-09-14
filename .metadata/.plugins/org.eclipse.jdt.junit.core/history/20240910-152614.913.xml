@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserServiceApplicationTests" project="UserService" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.hotel_review.user.UserServiceApplicationTests" time="1.007" displayname="UserServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.hotel_review.user.UserServiceApplicationTests]">
+    <testcase name="contextLoads" classname="com.hotel_review.user.UserServiceApplicationTests" time="0.941" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.hotel_review.user.UserServiceApplicationTests]/[method:contextLoads()]"/>
+    <testcase name="createRating" classname="com.hotel_review.user.UserServiceApplicationTests" time="0.064" displayname="createRating()" uniqueid="[engine:junit-jupiter]/[class:com.hotel_review.user.UserServiceApplicationTests]/[method:createRating()]">
+      <error>feign.FeignException$NotFound: [404] during [POST] to [http://localhost:8084/ratingcontroller/createrating/] [RatingService#createRating(Rating)]: [{"timestamp":"2024-09-10T09:56:16.002+00:00","status":404,"error":"Not Found","path":"/ratingcontroller/createrating/"}]&#13;
+	at feign.FeignException.clientErrorStatus(FeignException.java:228)&#13;
+	at feign.FeignException.errorStatus(FeignException.java:203)&#13;
+	at feign.FeignException.errorStatus(FeignException.java:194)&#13;
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)&#13;
+	at feign.InvocationContext.decodeError(InvocationContext.java:126)&#13;
+	at feign.InvocationContext.proceed(InvocationContext.java:72)&#13;
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:63)&#13;
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)&#13;
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)&#13;
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)&#13;
+	at jdk.proxy2/jdk.proxy2.$Proxy164.createRating(Unknown Source)&#13;
+	at com.hotel_review.user.UserServiceApplicationTests.createRating(UserServiceApplicationTests.java:24)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

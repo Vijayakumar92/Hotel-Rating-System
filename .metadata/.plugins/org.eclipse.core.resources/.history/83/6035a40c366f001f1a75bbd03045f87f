@@ -1,0 +1,5 @@
+package com.hotel_review.user.client;
+
+public interface Rating_Service {
+
+}

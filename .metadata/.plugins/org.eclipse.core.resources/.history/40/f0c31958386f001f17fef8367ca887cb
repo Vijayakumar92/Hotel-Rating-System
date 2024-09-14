@@ -1,0 +1,7 @@
+package com.hotel_review.user.client;
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="RATING-SERVICE", url="http://localhost:8084")
+public interface Rating_Service {
+
+}

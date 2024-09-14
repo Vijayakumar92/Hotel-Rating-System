@@ -1,0 +1,13 @@
+package com.hotel_review.user.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MyConfig {
+
+//	@Bean
+//	public RestTemplate restTemplate() {
+//		
+//		return new RestTemplate();
+//	}
+}
